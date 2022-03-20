@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "keyinput",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Extended Keyboard",
+  "description": "This mod adds a small keyboard to text inputs, which allows you to write emojis!",
   "authors": [
-    "Me!"
+    "jan Kawen"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,22 +14,22 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/keyinput/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.extended.keyboard.Main"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.18.x",
+    "java": ">=17"
   },
   "suggests": {
     "another-mod": "*"
